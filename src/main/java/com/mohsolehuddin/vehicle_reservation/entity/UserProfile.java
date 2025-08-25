@@ -1,13 +1,23 @@
 package com.mohsolehuddin.vehicle_reservation.entity;
 
+import java.sql.Date;
+
 import com.mohsolehuddin.vehicle_reservation.constant.EGender;
 import com.mohsolehuddin.vehicle_reservation.constant.PathDB;
 
-import jakarta.persistence.*;
-import lombok.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.OneToOne;
+import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
-
-import java.sql.Date;
 
 @Data
 @SuperBuilder
